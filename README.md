@@ -7,4 +7,4 @@ Dikidi API wrapper
 pip install git+https://github.com/ixtora/dikidi-api.git
 ```
 ### Example
-Example to use in [directory](examples/get_appointment.py)
+Example to use in [directory](examples/)
