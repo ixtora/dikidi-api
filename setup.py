@@ -2,9 +2,9 @@ import setuptools
 
 setuptools.setup(
     name="dikidi",
-    version="1.0.0",
+    version="1.0.1",
     description="Dikidi API wrapper",
-    url="https://github.com/ixtora/dikidi-adapter",
+    url="https://github.com/ixtora/dikidi-api",
     install_requires=[
                   'requests',
     ],
