@@ -34,7 +34,7 @@ class DikidiAPI:
             }
         )
         if 'callback' in response.json():
-            if 'sw.auth.complete()' in response.json()['callback']:
+            if 'sw.auth.complete' in response.json()['callback']:
                 logging.info('Auth complete')
                 return session
         raise Exception('Session not created')
@@ -77,6 +77,6 @@ class DikidiAPI:
                                                                     and record['status_id'] == '1']
         elif 'error' in records:
             if records['error'] != 0:
-                raise Exception("Code: {}. Message: {}".format(records['error']['code'], records['error']['message']))
+                raise Exception("Code: {}. Message: {}".format(records['error'], records['message']))
         else:
             raise Exception("Request execution error")
